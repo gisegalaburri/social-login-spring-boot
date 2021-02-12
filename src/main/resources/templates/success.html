@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+	<head>
+		<meta charset="UTF-8">
+		<title>Success - Social Login Spring Boot</title>
+	</head>
+	<body>
+		<h3>LOGGED IN WITH <span th:text="${clientId}"></span></h3>
+		
+		<p th:text="${name}"></p>
+		<p th:text="${email}"></p>
+		<p th:text="${id}"></p>
+		<p th:text="${picture}"></p>
+		<img th:src="@{__${picture}__}">
+		
+	</body>
+</html>
