@@ -1,0 +1,39 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          facebook: 
+            client-id: 164656895404497
+            client-secret: 097cca30e31f99965f669c54c4d76a28
+            
+          google:
+            client-id: 1070598032024-il7mq0ukcd6a3o1gmosgl5bnc5fo003a.apps.googleusercontent.com
+            client-secret: VPdTHOpFdpBlfF-8bvexcLfU
+            
+  datasource: 
+    url: jdbc:mysql://localhost:3306/social_login?allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=GMT&characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver 
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect      
+  thymeleaf:
+    cache: false
+
+server:
+  error:
+    whitelabel:
+      enabled: false
+  servlet:
+    session:
+      cookie:
+        http-only: true
+      tracking-modes:
+      - cookie
+  
