@@ -4,12 +4,12 @@ spring:
       client:
         registration:
           facebook: 
-            client-id: 164656895404497
-            client-secret: 097cca30e31f99965f669c54c4d76a28
+            client-id: {YOUR_CLIENT_ID}  
+            client-secret: {YOUR_CLIENT_SECRET}
             
           google:
-            client-id: 1070598032024-il7mq0ukcd6a3o1gmosgl5bnc5fo003a.apps.googleusercontent.com
-            client-secret: VPdTHOpFdpBlfF-8bvexcLfU
+            client-id: {YOUR_CLIENT_ID}
+            client-secret: {YOUR_CLIENT_SECRET}
             
   datasource: 
     url: jdbc:mysql://localhost:3306/social_login?allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=GMT&characterEncoding=UTF-8
